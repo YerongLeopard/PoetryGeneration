@@ -1,0 +1,90 @@
+Number of hidden states: 20
+Number of poems to generate: 1
+Group: A
+Number of words: 862
+modelnhiddengroupA_20_trial0 self.filename
+ who  own  those  thy  other  man  forgot  esteemed 
+ when  fortify  thus  that  by  which  false  or  blind  deemed 
+modelnhiddengroupA_20_trial1 self.filename
+ so  doth  this  old  excellent  esteemed 
+ to  not  is  dreams  contented  sea  deemed 
+modelnhiddengroupA_20_trial8 self.filename
+ when  tis  and  evil  pluck  esteemed 
+ how  to  glorious  thou  amis  deemed 
+List of log probability: [-5142.0456406  -5123.83234793 -5142.05251621 -5188.33563106 -5158.1239732
+ -5198.82842586 -5170.29605662 -5131.85473413 -5088.38424568 -5169.13625281]
+Group: B
+Number of words: 925
+modelnhiddengroupB_20_trial0 self.filename
+ that  ist  as  are  this  prove  now 
+ thou  bare  from  my  child  of  few  pain  brow 
+modelnhiddengroupB_20_trial3 self.filename
+ and  thy  of  scope  to  scandal  frown  waste  now 
+ crow  none  and  said  one  art  brow 
+modelnhiddengroupB_20_trial4 self.filename
+ or  what  but  most  proud  to  forgotten  now 
+ whose  war  bail  suggest  she  day  brow 
+List of log probability: [-4991.3551564  -5021.71516539 -5012.44733385 -4980.69204382 -4888.20099107
+ -4990.21071705 -4988.04802159 -4984.93736665 -5020.56007372 -5013.18143623]
+Group: C
+Number of words: 930
+modelnhiddengroupC_20_trial0 self.filename
+ when  that  and  your  mark  light 
+ whilst  if  would  this  the  thine  word  wrinkles  unknown  short  fight 
+modelnhiddengroupC_20_trial1 self.filename
+ the  one  seeting  solemn  and  see  live  when  builded  shall  why  errors  as  left  live  so  thou  mine  ushers  than  tell  light 
+ of  do  was  forgetful  placed  of  backward  me  that  once  dare  divine  fight 
+modelnhiddengroupC_20_trial3 self.filename
+ to  canker  hymn  let  chide  then  to  in  heart  unkindness  war  do  still  light 
+ have  sick  false  doth  dwell  fight 
+List of log probability: [-5133.21949534 -5076.47890327 -5080.3276756  -5022.17007754 -5053.07906997
+ -5033.23428239 -5056.18870849 -5045.92838635 -5028.02143329 -5063.78626835]
+Group: D
+Number of words: 998
+modelnhiddengroupD_20_trial0 self.filename
+ and  leaves  single  love  wind 
+ and  and  all  colour  disgrace  kind 
+List of log probability: [-4914.35355037 -4972.13140257 -4956.45461758 -4950.22756693 -5012.3707241
+ -4964.4262103  -5009.0015513  -4992.49454858 -4995.42625109 -4964.16084281]
+Group: E
+Number of words: 874
+modelnhiddengroupE_20_trial0 self.filename
+ ay  should  antique  thou  gave  hand  for  mothers  true  tyranny 
+ the  being  not  much  defect  this  in  word  be 
+modelnhiddengroupE_20_trial1 self.filename
+ that  to  their  love  base  my  robbery  my  converted  blot  tyranny 
+ ah  thou  love  termed  the  knowing  be 
+modelnhiddengroupE_20_trial9 self.filename
+ this  in  world  the  unswayed  unthrift  to  writ  tyranny 
+ so  thy  not  all  inconstant  thy  meet  be 
+List of log probability: [-5031.35608111 -4976.91005482 -4982.75569581 -4998.13107395 -5017.2778659
+ -4985.09796773 -5024.02671761 -4987.02120065 -5017.08311686 -4975.42063698]
+Group: F
+Number of words: 919
+modelnhiddengroupF_20_trial0 self.filename
+ and  all  the  dear  me  look  advocate 
+ thy  hope  thus  my  on  wondrous  jade  invocate 
+modelnhiddengroupF_20_trial2 self.filename
+ which  tongue  hearts  as  to  doom  advocate 
+ proving  present  for  acquaintance  invocate  invocate 
+modelnhiddengroupF_20_trial5 self.filename
+ potions  from  old  kingly  age  to  the  now  advocate 
+ as  stand  it  gift  with  graciously  his  your  in  judgments  part  invocate 
+modelnhiddengroupF_20_trial8 self.filename
+ let  it  heavily  thy  and  the  iniquity  advocate 
+ the  stand  or  fall  in  thy  rose  invocate 
+List of log probability: [-5030.85204094 -5140.82507215 -5003.58391496 -5073.54943393 -5085.29027574
+ -5002.74152111 -5066.23534561 -5085.36027582 -4988.3121503  -4994.573128  ]
+Group: G
+Number of words: 786
+modelnhiddengroupG_20_trial0 self.filename
+ but  call  offices  mine  you  loved  now 
+ that  single  of  leave  to  spent  how 
+modelnhiddengroupG_20_trial1 self.filename
+ where  had  as  these  my  their  and  all  against  my  dead  to  that  so  remain  now 
+ the  me  to  loud  more  fair  bright  how 
+modelnhiddengroupG_20_trial9 self.filename
+ when  till  beauty  for  save  and  first  green  now 
+ since  you  to  for  least  gives  beauty  dwell  this  fine  grow  how 
+List of log probability: [-5423.98161397 -5397.76081294 -5418.1467548  -5444.36766584 -5418.31128447
+ -5444.21686055 -5422.31894242 -5440.33406924 -5414.0181475  -5375.70187395]

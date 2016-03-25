@@ -1,0 +1,22 @@
+\BOOKMARK [1][-]{section.1}{Overview}{}% 1
+\BOOKMARK [1][-]{section.2}{Data Manipulation}{}% 2
+\BOOKMARK [1][-]{section.3}{Unsupervised Learning}{}% 3
+\BOOKMARK [2][-]{subsection.3.1}{Hidden Markov Model}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{Markov Model}{section.3}% 5
+\BOOKMARK [3][-]{section*.1}{1st order Markov Chain Model}{subsection.3.2}% 6
+\BOOKMARK [3][-]{equation.3.1}{2nd order Markov Chain Model}{subsection.3.2}% 7
+\BOOKMARK [1][-]{section.4}{Visualization and Interpretation for HMM}{}% 8
+\BOOKMARK [2][-]{section*.2}{Number of hidden states}{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.1}{Interpreting the hidden states}{section.4}% 10
+\BOOKMARK [1][-]{section.5}{Poetry Generation}{}% 11
+\BOOKMARK [2][-]{section*.3}{1st Hidden Markov Model}{section.5}% 12
+\BOOKMARK [2][-]{section*.4}{Stochastic thought}{section.5}% 13
+\BOOKMARK [3][-]{poemline.2.15}{2nd order Markov Chain Model}{section*.4}% 14
+\BOOKMARK [2][-]{section*.5}{Hope or Fear?}{section.5}% 15
+\BOOKMARK [2][-]{section*.6}{Love and Treasure Time}{section.5}% 16
+\BOOKMARK [3][-]{poemline.6.3}{Comparison : 1st Hidden Markov Model vs 2nd order Markov Chain Model}{section*.6}% 17
+\BOOKMARK [1][-]{section.6}{Additional researches that we have worked on}{}% 18
+\BOOKMARK [2][-]{subsection.6.1}{Rhyme}{section.6}% 19
+\BOOKMARK [2][-]{subsection.6.2}{Controlling the total number of syllables in a line}{section.6}% 20
+\BOOKMARK [2][-]{subsection.6.3}{Incorporating additional texts}{section.6}% 21
+\BOOKMARK [1][-]{section.7}{Conclusion}{}% 22

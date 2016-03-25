@@ -1,0 +1,100 @@
+Number of hidden states: 10
+Number of poems to generate: 1
+Group: A
+Number of words: 862
+modelnhiddengroupA_10_trial0 self.filename
+ that  do  hath  hath  of  that  prepare  jaws 
+ but  come  thou  sight  of  fair  wert  the  case  of  that  bring  paws 
+List of log probability: [-5477.02723048 -5530.64569478 -5604.90527888 -5480.5070877  -5518.18540959
+ -5515.28169197 -5494.6000053  -5523.8899933  -5505.32296848 -5604.92476301]
+Group: B
+Number of words: 925
+modelnhiddengroupB_10_trial0 self.filename
+ the  this  rage  date 
+ the  thousand  dwell  hate 
+modelnhiddengroupB_10_trial1 self.filename
+ to  time  even  nor  descriptions  doth  see  sweet  every  other  date 
+ when  dost  of  fair  other  hate 
+modelnhiddengroupB_10_trial4 self.filename
+ that  thy  and  sound  bodys  have  swearing  date 
+ bare  full  self  travel  forests  part  assistance  hate 
+modelnhiddengroupB_10_trial5 self.filename
+ that  may  upon  touches  oersways  not  full  world  or  thy  proud  heir  alchemy  date 
+ that  found  now  beautys  should  the  action  bravry  his  far  were  where  sweetest  drop  hours  than  astronomy  hate 
+modelnhiddengroupB_10_trial6 self.filename
+ my  with  gives  trenches  equal  plus  date 
+ it  work  that  thy  flower  flower  disperse  distilled  hate 
+modelnhiddengroupB_10_trial7 self.filename
+ swear  tripping  from  is  their  friend  date 
+ even  will  his  powers  your  it  his  name  hate 
+List of log probability: [-5371.80857292 -5352.46472691 -5365.8786014  -5391.29703055 -5341.3828461
+ -5324.78147891 -5324.43224109 -5306.03137619 -5401.38375453 -5334.93061446]
+Group: C
+Number of words: 930
+modelnhiddengroupC_10_trial0 self.filename
+ have  so  receives  story  selfs  case  with  doth  eye  have  and  mars  it  if  thou  the  wish  none  tell  of  shines  betray 
+ if  couplement  the  in  can  throned  his  fair  of  the  heaven  lay 
+modelnhiddengroupC_10_trial4 self.filename
+ then  those  at  adulterate  that  world  objects  is  betray 
+ and  his  in  doth  my  hooks  lay 
+modelnhiddengroupC_10_trial6 self.filename
+ are  in  muse  doth  breath  hearts  taken  betray 
+ when  blenches  fair  sake  and  of  to  prime  lay 
+List of log probability: [-5453.57964081 -5463.40582456 -5506.09072054 -5505.69114899 -5438.58688084
+ -5470.77892207 -5392.91611786 -5448.53893975 -5461.89440004 -5491.35245218]
+Group: D
+Number of words: 998
+modelnhiddengroupD_10_trial0 self.filename
+ but  wills  with  fill  or  proved  heart  catch  away  the  to  given  love  tincture  of  did  as  since  another  pays  shade  in  doth  strange  latch 
+ of  the  coming  to  disgrace  catch 
+modelnhiddengroupD_10_trial2 self.filename
+ making  that  closet  swift  him  may  says  their  wrong  latch 
+ and  hallowed  thy  catch  for  eye  wrinkles  store  catch 
+modelnhiddengroupD_10_trial4 self.filename
+ and  lively  once  my  burthen  by  bitter  eyes  of  thine  bear  latch 
+ since  the  objects  from  appear  catch 
+modelnhiddengroupD_10_trial5 self.filename
+ thy  beautys  that  things  wooed  to  appearance  it  course  away  latch 
+ that  lip  and  huge  wrinkles  you  catch 
+List of log probability: [-5371.02077961 -5402.68026291 -5367.23000208 -5390.35904688 -5308.19407221
+ -5295.09908179 -5361.75425079 -5393.25672895 -5336.93178011 -5356.03861045]
+Group: E
+Number of words: 874
+modelnhiddengroupE_10_trial0 self.filename
+ love  those  that  gusts  of  on  posterity  frown 
+ look  survey  down 
+modelnhiddengroupE_10_trial3 self.filename
+ unthrift  can  in  summer  give  loves  so  fingers  parts  of  me  be  my  compile  frown 
+ how  cure  that  flower  my  ensconce  and  eloquence  down 
+modelnhiddengroupE_10_trial6 self.filename
+ then  gainst  dull  back  frown 
+ and  highmost  true  thee  cool  doth  bosoms  tendered  down 
+modelnhiddengroupE_10_trial9 self.filename
+ but  me  all  in  lame  deep  at  much  now  thee  were  decay  frown 
+ for  painful  then  love  to  that  full  do  they  down 
+List of log probability: [-5408.0629566  -5414.0824819  -5441.90679357 -5365.8270892  -5436.03318691
+ -5401.45691113 -5315.67719026 -5413.41176349 -5346.75904656 -5304.56748378]
+Group: F
+Number of words: 919
+modelnhiddengroupF_10_trial0 self.filename
+ and  his  fear  glory  thine  sing 
+ the  bending  of  fortunes  costs  niggarding 
+modelnhiddengroupF_10_trial4 self.filename
+ than  not  thy  perhaps  it  honour  by  no  all  sing 
+ or  beautys  addeth  wrinkle  more  niggarding 
+List of log probability: [-5438.54099838 -5510.63625237 -5519.37367692 -5445.14726519 -5398.98941338
+ -5572.80044314 -5584.52587557 -5455.6284573  -5443.18204206 -5512.74343762]
+Group: G
+Number of words: 786
+modelnhiddengroupG_10_trial0 self.filename
+ for  most  to  so  fear 
+ but  live  such  virtue  she  all  that  he  this  heart  she  elsewhere  dear 
+modelnhiddengroupG_10_trial3 self.filename
+ and  pain  not  therefore  and  him  but  ransoms  and  conscience  that  best  have  one  fear 
+ but  receiving  will  and  faults  be  young  dear 
+modelnhiddengroupG_10_trial6 self.filename
+ save  nights  beauty  life  ever  have  kiss  fear 
+ thus  shall  truths  all  theres  do  of  belong  dear 
+List of log probability: [-5862.44774291 -5873.54531994 -5871.26760456 -5789.1665954  -5853.43525618
+ -5798.54539338 -5729.59148527 -5746.9307925  -5883.69003194 -5787.6252893 ]
+finished

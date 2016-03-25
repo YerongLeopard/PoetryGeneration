@@ -1,0 +1,136 @@
+%
+\paragraph{}
+We present results from the models we worked on in this project. As stated above, we do counting in the poetry generation to make sure that each line in our poem consists of 10 syallables. That is to say, we actually generation our poetry line by line, at each position of line, we repeated generate lines until we get a 10-syllable line: we only took our pick of lines with 10 syllables. In counting the syllables, we use dictionary from \textit{NLTK} and package \textit{PyHyphen} to break words into syllables, we did not truncate lines during the counting, so each line is supposed to end up in the \textit{END} state (this is the same for both Hidden Markov Model and Hidden Markov Model). We only took our pick at sentence level.
+\subsubsection{1st Hidden Markov Model}
+To make the improvements we have made clear, let look at a poem generated from HMM with 100 hidden states and trained and generated in a normal order (thus no rhyme dictionary is used and no syllable-counting is done):
+\settowidth{\versewidth}{even  see  shall  accessary  used  must  find  and  herself  enfeebled  mine  it}
+
+\begin{verse}[\versewidth]
+ look  wherefore  me  but  nothing  fortune  beautys  hath  soul\\
+ and  beauty  their  most  twice  being \\
+ to  have  make  some  fairer  is  thee  me  seeming \\
+ my  thou  new  silvered  unbless  and  till  their  alone \\
+ then  me  enforced  to  therefore  leaves  time \\
+ but  that  see  of  mock  was  my  hue \\
+ and  in  the  finger  some  self  chase \\
+ and  but  shadow  even  the  from  twenty  me  removed  thy  work  from  the  warmed \\
+ that  whom  with  in  eye  even  defeat \\
+ where  chide  thy  graces  and  victor  to  eye  thence  where  lines  may  be  gaol \\
+ the  like  do  child  say  hold  me  love  anothers  writ \\
+ that  play  scope  beloved  for  edge  make  or  thine  pupil  intelligence \\
+ all  want  in  that  your  adjunct  to  fair  sweet  praise \\
+ they  gluttoning  flattered  remain \\
+\end{verse}
+It is not accurate in rhyme, it does not make sense, and the rhythm is not correct.
+\paragraph{}
+For improvements, we partition the poetry set into different groups and train HMMs separately. We also generate poems group by group. Which is to say, in function
+\begin{lstlisting}
+>>> poem_generate(num_of_hidden_states, num_poems)
+\end{lstlisting}
+we loop over all groups. In each group, we generate the last word randomly from pre-built rhyming dictionary. For more details on rhyming dictionary, see Section \ref{sec:rhymedict}. In modelhmm member function:
+\begin{lstlisting}
+>>> generating_random_line_end(self, end_word)
+\end{lstlisting}
+we generate one line with the prescribed ending word. Specifically, starting from the ending word, we randomly (according to the trained transition and observation matrices) generate words in the reverse direction until we meet the END state, which marks as the completeness of a sentence. If we enable the syllable-counting feature, we count the number of syllables in each line and after several trials (50 or 500), we pick the line that has the number of syllables closest to 10. Finally, we concatenate these rhyming line-pairs into poems.
+
+Here is one poem we generate from HMM with 80 number of hidden states, we generate at most 5000 lines for counting the syllables. We name it \textbf{'Stochastic thought'}:
+\renewcommand{\poemtoc}{subsection}
+\poemtitle{Stochastic thought}
+\settowidth{\versewidth}{Thy proud hearts slave and vassal wretch to be?}
+\begin{verse}[\versewidth]
+They stain that calls, for every made why,\\
+But unto hammered alchemy nearly,\\
+When with thought restful tigers catch die,\\
+And his tongue the better loved to astronomy be:\\
+\vspace{5pt}
+For canker hold painter flies thine as bold skill,\\
+In others extremity these thence burthen still to hue see;\\
+When whos love painter even to still still,\\
+Shall by will from decease thee.\\
+\vspace{5pt}
+Whate'er my true love they to me shade,\\
+Mine to on are, love in thee offences behind way,\\
+What jewel me do not lack fade,\\
+To trial leases forth or thinking of time day?\\
+\vspace{5pt}
+\vin  Lascivious nothing thy of takes becoming words heart in old thee,\\
+\vin  This not slight thrice you love she defence see.\\
+\end{verse}
+
+We can see that with our improvement techniques, the poems we generate always honor the rhyme pattern. Moreover, all the 14 lines have total number of syllables around 10, which honor the iambic pentameter in Shakespeare's sonnets. However, most lines do not make sense.
+
+\subsubsection{2nd order Markov Chain Model}
+\paragraph{}
+We trained a 2nd-order Markov model for each group with the same improvement techniques as in the HHMs. Here are two poema we generated from our reversed-trained 2nd order Markov Model, with automatically marked punctuation, we name them \textbf{Hope or Fear?} and \textbf{Love and Treasure Time}:
+\renewcommand{\poemtoc}{subsection}
+\poemtitle{Hope or Fear?}
+\settowidth{\versewidth}{Thy proud hearts slave and vassal wretch to be?}
+\begin{verse}[\versewidth]
+Applying fears to hopes, and hopes to fears,\\
+And swear that brightness doth not grace the day,\\
+What potions have drunk of siren tears,\\
+My sinful earth these rebel powers array:\\
+\vspace{5pt}
+Duty so great which wit so poor as mine,\\
+The spirit of love with perpetual dulness;\\
+Nothing sweet boy but yet like prayers divine,\\
+Thy hungry eyes even till they wink with fulness.\\
+\vspace{5pt}
+Therefore love be of thyself so wary,\\
+Thy black is fairest, in my judgments place,\\
+Of more delight than hawks and horses be,\\
+To guard the lawful reasons on thy face?\\
+\vspace{5pt}
+\vin  Or gluttoning on all or all away,\\
+\vin  Yet him for this my love was my decay.\\
+\end{verse}
+
+\renewcommand{\poemtoc}{subsection}
+\poemtitle{Love and Treasure Time}
+\settowidth{\versewidth}{Thy proud hearts slave and vassal wretch to be?}
+\begin{verse}[\versewidth]
+Join with the time, do not love thee not,\\
+Then look death my bones with dust shall cover,\\
+In faith do not think on thee when forgot,\\
+These poor rude lines of thy deceased lover:\\
+\vspace{5pt}
+Of his quick objects hath the mind no part,\\
+Thou dost love her because thou knowst love her;\\
+Or at the least so long as brain and heart,\\
+In the distraction of this madding fever.\\
+ \vspace{5pt}
+Do you him take and in possession so,\\
+And live no more, endure on them to look,\\
+Love to hear her speak yet well know,\\
+Save what is had or must from you be took?\\
+ \vspace{5pt}
+ \vin To love that well which thou must leave ere long,\\
+ \vin Then do thy worst old time despite thy wrong.\\
+ 
+\end{verse}
+\paragraph{}
+From numbers of poems we generated from 2nd Markov Model, we find this model can catch the sense in the poem, and this brings in a problem as well : since it takes the  most reasonalbe verses, sometimes it simply will reproduce the orignal verses in training sets. But this is not what it is actually doing, it is catching the most reasonable pieces in the poem set and 'stick' them together. For instance , with 
+\settowidth{\versewidth}{even  see  shall  accessary  used  must  find  and  herself  enfeebled  mine  it}
+\begin{verse}[\versewidth]
+
+{\color{blue}And for the peace} of you I hold such strife,\\
+how I faint when I of {\color{red}you do write},\\
+{\color{blue}Men call you fair}, and you do credit it,\\
+
+\end{verse}
+Markov Chain Model sometimes produces verses like these:
+\settowidth{\versewidth}{even  see  shall  accessary  used  must  find  and  herself  enfeebled  mine  it}
+\begin{verse}[\versewidth]
+
+{\color{blue}And for the peace}, of {\color{red}you do write}\\
+{\color{blue}Men call you fair}, and {\color{red}you do write}\\
+
+\end{verse}
+\subsubsection{Comparison : \textit{1st Hidden Markov Model} vs \textit{2nd order Markov Chain Model}}
+\vspace{3pt}
+\begin{itemize}
+	\item Firstly, both models honor the rhyme pattern nor the iambic pentameter in Shakespeare's sonnets.
+	\item The next thing we should mention is that the 2nd order Markov Model is capturing the senses, so each verse generated by it reads comparatively more reasonable. It is generating jointed sentences like '{\color{blue}Men call you fair}, and {\color{red}you do write}'.
+	\item Thirdly, We find in the reasoning of the verses, Markov model makes more sense than the Hidden Markov Model. For example, the \textbf{'Hope or Fear?'} and \textbf{Love and Treasure Time}reads more reasonable, while \textbf{'Stochastic thought'} does not make much sense. 
+	\item Last but not the least, since we generate rhyming lines for each group independently, our models can't keep a unified topic across all the 14 lines. Although every line from the 2rd-order Markov model makes some sense separately, the whole poem sounds like a drunk Shakespeare who randomly jumps from one topic to another.
+\end{itemize}
