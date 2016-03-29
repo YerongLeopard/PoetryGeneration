@@ -1,6 +1,0 @@
-PWD /Users/yerong/Desktop/tmp/report/section
-INPUT /usr/local/texlive/2015/texmf.cnf
-INPUT /usr/local/texlive/2015/texmf-dist/web2c/texmf.cnf
-INPUT /usr/local/texlive/2015/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT trials.tex
-OUTPUT trials.log
